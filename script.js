@@ -4,20 +4,15 @@ document.addEventListener('DOMContentLoaded', function() {
         highestStreak = parseInt(localStorage.getItem('highestStreak'));
         highestStreakText.innerText = "Highest Streak: " + highestStreak;
         streakText.innerText = "Current streak: " + streak
-        localStorage.setItem('mod', 'mod');
-        if (typeof localStorage !== 'undefined') {
-    var x = localStorage.getItem('mod');
-} else {
-    // localStorage not defined
-}
-}
     }
 })
 
 
 let streak = 0
 /*declare elements*/
-let higherbutton = document.getElementById("higherButton")
+ldocument.addEventListener('DOMContentLoaded', function() {
+    next();
+    if (localStorage.getItem('highestStreet higherbutton = document.getElementById("higherButton")
 let lowerButton = document.getElementById("lowerButton")
 let displayNumberText = document.getElementById("displayNumberText")
 let rightWrongText = document.getElementById("rightWrongText")
