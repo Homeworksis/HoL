@@ -5,14 +5,11 @@ document.addEventListener('DOMContentLoaded', function() {
         highestStreakText.innerText = "Highest Streak: " + highestStreak;
         streakText.innerText = "Current streak: " + streak
         localStorage.setItem('mod', 'mod');
-        if (localStorage.getItem('mod') != null){
-
-            alert ('yes');
-
-            localStorage.removeItem('mod');
-        } else {
-
-            alert ('no');
+        if (typeof localStorage !== 'undefined') {
+    var x = localStorage.getItem('mod');
+} else {
+    // localStorage not defined
+}
 }
     }
 })
