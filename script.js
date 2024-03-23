@@ -4,6 +4,16 @@ document.addEventListener('DOMContentLoaded', function() {
         highestStreak = parseInt(localStorage.getItem('highestStreak'));
         highestStreakText.innerText = "Highest Streak: " + highestStreak;
         streakText.innerText = "Current streak: " + streak
+        localStorage.setItem('mod', 'mod');
+        if (localStorage.getItem('mod') != null){
+
+            alert ('yes');
+
+            localStorage.removeItem('mod');
+        } else {
+
+            alert ('no');
+}
     }
 })
 
